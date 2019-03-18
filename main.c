@@ -13,7 +13,7 @@ int main(){
 	exibe(l); //exibe uma tabela com os indices e os valores respectivos da lista
 	busca(888, l); //teste com valor inexistente na lista, retorna -1 pois nao encontrou
 	busca(88, l); //teste com valor contido dentro da lista, retorna a posição do numero em questao
-	
+	apagar(6, l);
 	destroi(l); //desaloca lista da memoria
 	return 0;
 }

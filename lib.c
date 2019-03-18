@@ -4,7 +4,7 @@
 #include "lib.h"
 
 Lista* define(size_t tam, int* val){
-	Lista* l = (Lista*)malloc(tam * sizeof(Lista));
+	Lista* l = (Lista*)malloc(sizeof(Lista));
 	if(l != NULL){
 		l->inicio = 0;
 		l->fim = tam;
@@ -39,6 +39,7 @@ int busca(int n, Lista* l){
 }
 
 int apagar(int pos, Lista* l) {
+	l->itens[pos] = -1;
 	return 0;
 }
 

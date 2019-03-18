@@ -1,12 +1,12 @@
 #define TAM 10 
 
-struct lista {
+typedef struct lista {
 	int inicio;
 	int fim;
 	int itens[TAM];
-};
+} Lista;
 
-struct descritor{
+typedef struct descritor{
 	int inicioArranjo;
 	int inicioLista;
 	int numero;
@@ -14,10 +14,7 @@ struct descritor{
 	int fimArranjo;
 	int menor;
 	int maior;
-};
-
-typedef struct lista Lista;
-typedef struct descritor Descritor;
+} Descritor;
 
 Lista* define(size_t tam, int* val); //retorna lista de uma estrutura com tamanho e valores definidos pelo usuário
 void exibe(Lista* l);
